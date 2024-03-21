@@ -15,7 +15,7 @@ test("renders the welcome message", () => {
 
 test("renders correct number of book cards", () => {
   render(<AllTheBooks />);
-  const bookCards = screen.getAllByTestId("cards");
+  const bookCards = screen.getAllByTestId("card");
   expect(bookCards).toHaveLength(fantasy.length);
 });
 
